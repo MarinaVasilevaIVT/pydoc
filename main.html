@@ -1,0 +1,1045 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/runner/pydocc/main.py">/home/runner/pydocc/main.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pytz.html">pytz</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="orator.orm.model.html#Model">orator.orm.model.Model</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#User">User</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="User">class <strong>User</strong></a>(<a href="orator.orm.model.html#Model">orator.orm.model.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#User-__table__">User</a>(_attributes=None,&nbsp;**attributes)<br>
+&nbsp;<br>
+Класс,&nbsp;представляющий&nbsp;пользователя&nbsp;в&nbsp;базе&nbsp;данных<br>
+&nbsp;<br>
+Атрибуты:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;__table__&nbsp;(str):&nbsp;Имя&nbsp;таблицы&nbsp;базы&nbsp;данных,&nbsp;связанной&nbsp;с&nbsp;моделью;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;__fillable__&nbsp;(list):&nbsp;Список&nbsp;заполняемых&nbsp;атрибутов&nbsp;модели;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;__timestamps__&nbsp;(bool):&nbsp;Указывает,&nbsp;следует&nbsp;ли&nbsp;использовать&nbsp;метки&nbsp;времени&nbsp;для&nbsp;модели<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#User">User</a></dd>
+<dd><a href="orator.orm.model.html#Model">orator.orm.model.Model</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Class methods inherited from <a href="orator.orm.model.html#Model">orator.orm.model.Model</a>:<br>
+<dl><dt><a name="User-add_global_scope"><strong>add_global_scope</strong></a>(scope, implementation=None)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;a&nbsp;new&nbsp;global&nbsp;scope&nbsp;on&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;scope:&nbsp;The&nbsp;scope&nbsp;to&nbsp;register<br>
+:type&nbsp;scope:&nbsp;orator.orm.scopes.scope.Scope&nbsp;or&nbsp;callable&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;implementation:&nbsp;The&nbsp;scope&nbsp;implementation<br>
+:type&nbsp;implementation:&nbsp;callbale&nbsp;or&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="User-all"><strong>all</strong></a>(columns=None)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Get&nbsp;all&nbsp;og&nbsp;the&nbsp;models&nbsp;from&nbsp;the&nbsp;database.<br>
+&nbsp;<br>
+:param&nbsp;columns:&nbsp;The&nbsp;columns&nbsp;to&nbsp;retrieve<br>
+:type&nbsp;columns:&nbsp;list<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;Collection&nbsp;instance<br>
+:rtype:&nbsp;Collection</tt></dd></dl>
+
+<dl><dt><a name="User-create"><strong>create</strong></a>(_attributes=None, **attributes)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Save&nbsp;a&nbsp;new&nbsp;model&nbsp;an&nbsp;return&nbsp;the&nbsp;instance.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;instance&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;new&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-created"><strong>created</strong></a>(callback)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;a&nbsp;created&nbsp;model&nbsp;event&nbsp;with&nbsp;the&nbsp;dispatcher.<br>
+&nbsp;<br>
+:type&nbsp;callback:&nbsp;callable</tt></dd></dl>
+
+<dl><dt><a name="User-creating"><strong>creating</strong></a>(callback)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;a&nbsp;creating&nbsp;model&nbsp;event&nbsp;with&nbsp;the&nbsp;dispatcher.<br>
+&nbsp;<br>
+:type&nbsp;callback:&nbsp;callable</tt></dd></dl>
+
+<dl><dt><a name="User-deleted"><strong>deleted</strong></a>(callback)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;a&nbsp;deleted&nbsp;model&nbsp;event&nbsp;with&nbsp;the&nbsp;dispatcher.<br>
+&nbsp;<br>
+:type&nbsp;callback:&nbsp;callable</tt></dd></dl>
+
+<dl><dt><a name="User-deleting"><strong>deleting</strong></a>(callback)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;a&nbsp;deleting&nbsp;model&nbsp;event&nbsp;with&nbsp;the&nbsp;dispatcher.<br>
+&nbsp;<br>
+:type&nbsp;callback:&nbsp;callable</tt></dd></dl>
+
+<dl><dt><a name="User-destroy"><strong>destroy</strong></a>(*ids)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Destroy&nbsp;the&nbsp;models&nbsp;for&nbsp;the&nbsp;given&nbsp;IDs<br>
+&nbsp;<br>
+:param&nbsp;ids:&nbsp;The&nbsp;ids&nbsp;of&nbsp;the&nbsp;models&nbsp;to&nbsp;destroy<br>
+:type&nbsp;ids:&nbsp;tuple<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;number&nbsp;of&nbsp;models&nbsp;destroyed<br>
+:rtype:&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="User-find"><strong>find</strong></a>(id, columns=None)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Find&nbsp;a&nbsp;model&nbsp;by&nbsp;its&nbsp;primary&nbsp;key.<br>
+&nbsp;<br>
+:param&nbsp;id:&nbsp;The&nbsp;id&nbsp;of&nbsp;the&nbsp;model<br>
+:type&nbsp;id:&nbsp;mixed<br>
+&nbsp;<br>
+:param&nbsp;columns:&nbsp;The&nbsp;columns&nbsp;to&nbsp;retrieve<br>
+:type&nbsp;columns:&nbsp;list<br>
+&nbsp;<br>
+:return:&nbsp;Either&nbsp;a&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;instance&nbsp;or&nbsp;a&nbsp;Collection<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-find_or_new"><strong>find_or_new</strong></a>(id, columns=None)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Find&nbsp;a&nbsp;model&nbsp;by&nbsp;its&nbsp;primary&nbsp;key&nbsp;or&nbsp;return&nbsp;new&nbsp;instance.<br>
+&nbsp;<br>
+:param&nbsp;id:&nbsp;The&nbsp;id&nbsp;of&nbsp;the&nbsp;model<br>
+:type&nbsp;id:&nbsp;mixed<br>
+&nbsp;<br>
+:param&nbsp;columns:&nbsp;The&nbsp;columns&nbsp;to&nbsp;retrieve<br>
+:type&nbsp;columns:&nbsp;list<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-first_or_create"><strong>first_or_create</strong></a>(**attributes)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Get&nbsp;the&nbsp;first&nbsp;record&nbsp;matching&nbsp;the&nbsp;attributes&nbsp;or&nbsp;create&nbsp;it.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;instance&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;new&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-first_or_new"><strong>first_or_new</strong></a>(**attributes)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Get&nbsp;the&nbsp;first&nbsp;record&nbsp;matching&nbsp;the&nbsp;attributes&nbsp;or&nbsp;instantiate&nbsp;it.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;instance&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;new&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-flush_event_listeners"><strong>flush_event_listeners</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Remove&nbsp;all&nbsp;of&nbsp;the&nbsp;event&nbsp;listeners&nbsp;for&nbsp;the&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="User-force_create"><strong>force_create</strong></a>(**attributes)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Save&nbsp;a&nbsp;new&nbsp;model&nbsp;an&nbsp;return&nbsp;the&nbsp;instance.&nbsp;Allow&nbsp;mass&nbsp;assignment.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;instance&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;new&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-get_connection_resolver"><strong>get_connection_resolver</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Get&nbsp;the&nbsp;connection&nbsp;resolver&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="User-get_global_scope"><strong>get_global_scope</strong></a>(scope)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Get&nbsp;a&nbsp;global&nbsp;scope&nbsp;registered&nbsp;with&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;scope:&nbsp;The&nbsp;scope&nbsp;to&nbsp;register<br>
+:type&nbsp;scope:&nbsp;orator.orm.scopes.scope.Scope&nbsp;or&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_morph_name"><strong>get_morph_name</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Get&nbsp;the&nbsp;name&nbsp;for&nbsp;polymorphic&nbsp;relations.</tt></dd></dl>
+
+<dl><dt><a name="User-get_observable_events"><strong>get_observable_events</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Get&nbsp;the&nbsp;observable&nbsp;event&nbsp;names.<br>
+&nbsp;<br>
+:rtype:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="User-has_global_scope"><strong>has_global_scope</strong></a>(scope)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Determine&nbsp;if&nbsp;a&nbsp;model&nbsp;has&nbsp;a&nbsp;global&nbsp;scope.<br>
+&nbsp;<br>
+:param&nbsp;scope:&nbsp;The&nbsp;scope&nbsp;to&nbsp;register<br>
+:type&nbsp;scope:&nbsp;orator.orm.scopes.scope.Scope&nbsp;or&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-hydrate"><strong>hydrate</strong></a>(items, connection=None)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Create&nbsp;a&nbsp;collection&nbsp;of&nbsp;models&nbsp;from&nbsp;plain&nbsp;lists.<br>
+&nbsp;<br>
+:param&nbsp;items:<br>
+:param&nbsp;connection:<br>
+:return:</tt></dd></dl>
+
+<dl><dt><a name="User-hydrate_raw"><strong>hydrate_raw</strong></a>(query, bindings=None, connection=None)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Create&nbsp;a&nbsp;collection&nbsp;of&nbsp;models&nbsp;from&nbsp;a&nbsp;raw&nbsp;query.<br>
+&nbsp;<br>
+:param&nbsp;query:&nbsp;The&nbsp;SQL&nbsp;query<br>
+:type&nbsp;query:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;bindings:&nbsp;The&nbsp;query&nbsp;bindings<br>
+:type&nbsp;bindings:&nbsp;list<br>
+&nbsp;<br>
+:param&nbsp;connection:&nbsp;The&nbsp;connection&nbsp;name<br>
+&nbsp;<br>
+:rtype:&nbsp;Collection</tt></dd></dl>
+
+<dl><dt><a name="User-observe"><strong>observe</strong></a>(observer)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;an&nbsp;observer&nbsp;with&nbsp;the&nbsp;<a href="orator.orm.model.html#Model">Model</a>.<br>
+&nbsp;<br>
+:param&nbsp;observer:&nbsp;The&nbsp;observer</tt></dd></dl>
+
+<dl><dt><a name="User-on"><strong>on</strong></a>(connection=None)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Begin&nbsp;querying&nbsp;the&nbsp;model&nbsp;on&nbsp;a&nbsp;given&nbsp;connection.<br>
+&nbsp;<br>
+:param&nbsp;connection:&nbsp;The&nbsp;connection&nbsp;name<br>
+:type&nbsp;connection:&nbsp;str<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;Builder&nbsp;instance<br>
+:rtype:&nbsp;orator.orm.Builder</tt></dd></dl>
+
+<dl><dt><a name="User-on_write_connection"><strong>on_write_connection</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Begin&nbsp;querying&nbsp;the&nbsp;model&nbsp;on&nbsp;the&nbsp;write&nbsp;connection.<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;Builder&nbsp;instance<br>
+:rtype:&nbsp;QueryBuilder</tt></dd></dl>
+
+<dl><dt><a name="User-query"><strong>query</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt></dl>
+
+<dl><dt><a name="User-reguard"><strong>reguard</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Enable&nbsp;the&nbsp;mass&nbsp;assignment&nbsp;restrictions.<br>
+:return:</tt></dd></dl>
+
+<dl><dt><a name="User-resolve_connection"><strong>resolve_connection</strong></a>(connection=None)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Resolve&nbsp;a&nbsp;connection&nbsp;instance.<br>
+&nbsp;<br>
+:param&nbsp;connection:&nbsp;The&nbsp;connection&nbsp;name<br>
+:type&nbsp;connection:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;orator.connections.Connection</tt></dd></dl>
+
+<dl><dt><a name="User-saved"><strong>saved</strong></a>(callback)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;a&nbsp;saved&nbsp;model&nbsp;event&nbsp;with&nbsp;the&nbsp;dispatcher.<br>
+&nbsp;<br>
+:type&nbsp;callback:&nbsp;callable</tt></dd></dl>
+
+<dl><dt><a name="User-saving"><strong>saving</strong></a>(callback)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;a&nbsp;saving&nbsp;model&nbsp;event&nbsp;with&nbsp;the&nbsp;dispatcher.<br>
+&nbsp;<br>
+:type&nbsp;callback:&nbsp;callable</tt></dd></dl>
+
+<dl><dt><a name="User-set_connection_resolver"><strong>set_connection_resolver</strong></a>(resolver)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Set&nbsp;the&nbsp;connection&nbsp;resolver&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="User-unguard"><strong>unguard</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Disable&nbsp;the&nbsp;mass&nbsp;assigment&nbsp;restrictions.</tt></dd></dl>
+
+<dl><dt><a name="User-unset_connection_resolver"><strong>unset_connection_resolver</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Unset&nbsp;the&nbsp;connection&nbsp;resolver&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="User-update_or_create"><strong>update_or_create</strong></a>(attributes, values=None)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Create&nbsp;or&nbsp;update&nbsp;a&nbsp;record&nbsp;matching&nbsp;the&nbsp;attributes,&nbsp;and&nbsp;fill&nbsp;it&nbsp;with&nbsp;values.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;instance&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:param&nbsp;values:&nbsp;The&nbsp;values<br>
+:type&nbsp;values:&nbsp;dict<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;new&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-updated"><strong>updated</strong></a>(callback)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;a&nbsp;updated&nbsp;model&nbsp;event&nbsp;with&nbsp;the&nbsp;dispatcher.<br>
+&nbsp;<br>
+:type&nbsp;callback:&nbsp;callable</tt></dd></dl>
+
+<dl><dt><a name="User-updating"><strong>updating</strong></a>(callback)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Register&nbsp;a&nbsp;updating&nbsp;model&nbsp;event&nbsp;with&nbsp;the&nbsp;dispatcher.<br>
+&nbsp;<br>
+:type&nbsp;callback:&nbsp;callable</tt></dd></dl>
+
+<dl><dt><a name="User-with_"><strong>with_</strong></a>(*relations)<font color="#909090"><font face="helvetica, arial"> from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a></font></font></dt><dd><tt>Begin&nbsp;querying&nbsp;a&nbsp;model&nbsp;with&nbsp;eager&nbsp;loading<br>
+&nbsp;<br>
+:param&nbsp;relations:&nbsp;The&nbsp;relations&nbsp;to&nbsp;eager&nbsp;load<br>
+:type&nbsp;relations:&nbsp;str&nbsp;or&nbsp;list<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;Builder&nbsp;instance<br>
+:rtype:&nbsp;Builder</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="orator.orm.model.html#Model">orator.orm.model.Model</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a>:<br>
+<dl><dt><a name="User-__delattr__"><strong>__delattr__</strong></a>(self, item)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="User-__getattr__"><strong>__getattr__</strong></a>(self, item)</dt></dl>
+
+<dl><dt><a name="User-__getstate__"><strong>__getstate__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="User-__init__"><strong>__init__</strong></a>(self, _attributes=None, **attributes)</dt><dd><tt>:param&nbsp;attributes:&nbsp;The&nbsp;instance&nbsp;attributes</tt></dd></dl>
+
+<dl><dt><a name="User-__setattr__"><strong>__setattr__</strong></a>(self, key, value)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="User-__setstate__"><strong>__setstate__</strong></a>(self, state)</dt></dl>
+
+<dl><dt><a name="User-add_hidden"><strong>add_hidden</strong></a>(self, *attributes)</dt><dd><tt>Add&nbsp;hidden&nbsp;attributes&nbsp;to&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;attributes&nbsp;to&nbsp;hide<br>
+:type&nbsp;attributes:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="User-add_visible"><strong>add_visible</strong></a>(self, *attributes)</dt><dd><tt>Add&nbsp;visible&nbsp;attributes&nbsp;to&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;attributes&nbsp;to&nbsp;make&nbsp;visible<br>
+:type&nbsp;attributes:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="User-as_datetime"><strong>as_datetime</strong></a>(self, value)</dt><dd><tt>Return&nbsp;a&nbsp;timestamp&nbsp;as&nbsp;a&nbsp;datetime.<br>
+&nbsp;<br>
+:rtype:&nbsp;pendulum.Pendulum&nbsp;or&nbsp;pendulum.Date</tt></dd></dl>
+
+<dl><dt><a name="User-attributes_to_dict"><strong>attributes_to_dict</strong></a>(self)</dt><dd><tt>Convert&nbsp;the&nbsp;model's&nbsp;attributes&nbsp;to&nbsp;a&nbsp;dictionary.<br>
+&nbsp;<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="User-belongs_to"><strong>belongs_to</strong></a>(self, related, foreign_key=None, other_key=None, relation=None, _wrapped=True)</dt><dd><tt>Define&nbsp;an&nbsp;inverse&nbsp;one&nbsp;to&nbsp;one&nbsp;or&nbsp;many&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model:<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;foreign_key:&nbsp;The&nbsp;foreign&nbsp;key<br>
+:type&nbsp;foreign_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;other_key:&nbsp;The&nbsp;other&nbsp;key<br>
+:type&nbsp;other_key:&nbsp;str<br>
+&nbsp;<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;BelongsTo</tt></dd></dl>
+
+<dl><dt><a name="User-belongs_to_many"><strong>belongs_to_many</strong></a>(self, related, table=None, foreign_key=None, other_key=None, relation=None, _wrapped=True)</dt><dd><tt>Define&nbsp;a&nbsp;many-to-many&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;table:&nbsp;The&nbsp;pivot&nbsp;table<br>
+:type&nbsp;table:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;foreign_key:&nbsp;The&nbsp;foreign&nbsp;key<br>
+:type&nbsp;foreign_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;other_key:&nbsp;The&nbsp;other&nbsp;key<br>
+:type&nbsp;other_key:&nbsp;str<br>
+&nbsp;<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;BelongsToMany</tt></dd></dl>
+
+<dl><dt><a name="User-delete"><strong>delete</strong></a>(self)</dt><dd><tt>Delete&nbsp;the&nbsp;model&nbsp;from&nbsp;the&nbsp;database.<br>
+&nbsp;<br>
+:rtype:&nbsp;bool&nbsp;or&nbsp;None<br>
+&nbsp;<br>
+:raises:&nbsp;Exception</tt></dd></dl>
+
+<dl><dt><a name="User-fill"><strong>fill</strong></a>(self, _attributes=None, **attributes)</dt><dd><tt>Fill&nbsp;the&nbsp;model&nbsp;with&nbsp;attributes.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;instance&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;model&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a><br>
+&nbsp;<br>
+:raises:&nbsp;MassAssignmentError</tt></dd></dl>
+
+<dl><dt><a name="User-fillable"><strong>fillable</strong></a>(self, fillable)</dt><dd><tt>Set&nbsp;the&nbsp;fillable&nbsp;attributes&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;fillable:&nbsp;The&nbsp;fillable&nbsp;attributes<br>
+:type&nbsp;fillable:&nbsp;list<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;current&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-force_delete"><strong>force_delete</strong></a>(self)</dt><dd><tt>Force&nbsp;a&nbsp;hard&nbsp;delete&nbsp;on&nbsp;a&nbsp;soft&nbsp;deleted&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="User-force_fill"><strong>force_fill</strong></a>(self, _attributes=None, **attributes)</dt><dd><tt>Fill&nbsp;the&nbsp;model&nbsp;with&nbsp;attributes.&nbsp;Force&nbsp;mass&nbsp;assignment.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;instance&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;model&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-fresh"><strong>fresh</strong></a>(self, with_=None)</dt><dd><tt>Reload&nbsp;a&nbsp;fresh&nbsp;instance&nbsp;from&nbsp;the&nbsp;database.<br>
+&nbsp;<br>
+:param&nbsp;with_:&nbsp;The&nbsp;list&nbsp;of&nbsp;relations&nbsp;to&nbsp;eager&nbsp;load<br>
+:type&nbsp;with_:&nbsp;list<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;current&nbsp;model&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-fresh_timestamp"><strong>fresh_timestamp</strong></a>(self)</dt><dd><tt>Get&nbsp;a&nbsp;fresh&nbsp;timestamp&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:return:&nbsp;pendulum.Pendulum</tt></dd></dl>
+
+<dl><dt><a name="User-fresh_timestamp_string"><strong>fresh_timestamp_string</strong></a>(self)</dt><dd><tt>Get&nbsp;a&nbsp;fresh&nbsp;timestamp&nbsp;string&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:return:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-from_datetime"><strong>from_datetime</strong></a>(self, value)</dt><dd><tt>Convert&nbsp;datetime&nbsp;to&nbsp;a&nbsp;storable&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;value:&nbsp;The&nbsp;datetime&nbsp;value<br>
+:type&nbsp;value:&nbsp;pendulum.Pendulum&nbsp;or&nbsp;datetime.date&nbsp;or&nbsp;datetime.datetime<br>
+&nbsp;<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_actual_class_for_morph"><strong>get_actual_class_for_morph</strong></a>(self, slug)</dt><dd><tt>Retrieve&nbsp;the&nbsp;class&nbsp;from&nbsp;a&nbsp;slug.<br>
+&nbsp;<br>
+:param&nbsp;slug:&nbsp;The&nbsp;slug<br>
+:type&nbsp;slug:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_attribute"><strong>get_attribute</strong></a>(self, key, original=None)</dt><dd><tt>Get&nbsp;an&nbsp;attribute&nbsp;from&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;key:&nbsp;The&nbsp;attribute&nbsp;to&nbsp;get<br>
+:type&nbsp;key:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_attributes"><strong>get_attributes</strong></a>(self)</dt><dd><tt>Get&nbsp;all&nbsp;of&nbsp;the&nbsp;current&nbsp;attributes&nbsp;on&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="User-get_connection"><strong>get_connection</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;database&nbsp;connection&nbsp;for&nbsp;the&nbsp;model<br>
+&nbsp;<br>
+:rtype:&nbsp;orator.connections.Connection</tt></dd></dl>
+
+<dl><dt><a name="User-get_connection_name"><strong>get_connection_name</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;database&nbsp;connection&nbsp;name&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_created_at_column"><strong>get_created_at_column</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;"created&nbsp;at"&nbsp;column.<br>
+&nbsp;<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_date_format"><strong>get_date_format</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;format&nbsp;to&nbsp;use&nbsp;for&nbsp;timestamps&nbsp;and&nbsp;dates.<br>
+&nbsp;<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_dates"><strong>get_dates</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;attributes&nbsp;that&nbsp;should&nbsp;be&nbsp;converted&nbsp;to&nbsp;dates.<br>
+&nbsp;<br>
+:rtype:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="User-get_dirty"><strong>get_dirty</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;attribute&nbsp;that&nbsp;have&nbsp;been&nbsp;change&nbsp;since&nbsp;last&nbsp;sync.<br>
+&nbsp;<br>
+:rtype:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="User-get_fillable"><strong>get_fillable</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;fillable&nbsp;attributes&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:rtype:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="User-get_foreign_key"><strong>get_foreign_key</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;default&nbsp;foreign&nbsp;key&nbsp;name&nbsp;for&nbsp;the&nbsp;model<br>
+&nbsp;<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_global_scopes"><strong>get_global_scopes</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;global&nbsp;scopes&nbsp;for&nbsp;this&nbsp;class&nbsp;instance.<br>
+&nbsp;<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="User-get_guarded"><strong>get_guarded</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;guarded&nbsp;attributes.</tt></dd></dl>
+
+<dl><dt><a name="User-get_hidden"><strong>get_hidden</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;hidden&nbsp;attributes&nbsp;for&nbsp;the&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="User-get_incrementing"><strong>get_incrementing</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="User-get_key"><strong>get_key</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;model's&nbsp;primary&nbsp;key.</tt></dd></dl>
+
+<dl><dt><a name="User-get_key_name"><strong>get_key_name</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;primary&nbsp;key&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;primary&nbsp;key&nbsp;name<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_morphs"><strong>get_morphs</strong></a>(self, name, type, id)</dt><dd><tt>Get&nbsp;the&nbsp;polymorphic&nbsp;relationship&nbsp;columns.</tt></dd></dl>
+
+<dl><dt><a name="User-get_original"><strong>get_original</strong></a>(self, key=None, default=None)</dt><dd><tt>Get&nbsp;the&nbsp;original&nbsp;values<br>
+&nbsp;<br>
+:param&nbsp;key:&nbsp;The&nbsp;original&nbsp;key&nbsp;to&nbsp;get<br>
+:type&nbsp;key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;default:&nbsp;The&nbsp;default&nbsp;value&nbsp;if&nbsp;the&nbsp;key&nbsp;does&nbsp;not&nbsp;exist<br>
+:type&nbsp;default:&nbsp;mixed<br>
+&nbsp;<br>
+:rtype:&nbsp;mixed</tt></dd></dl>
+
+<dl><dt><a name="User-get_per_page"><strong>get_per_page</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;number&nbsp;of&nbsp;models&nbsp;to&nbsp;return&nbsp;per&nbsp;page.<br>
+&nbsp;<br>
+:rtype:&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="User-get_qualified_key_name"><strong>get_qualified_key_name</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;table&nbsp;qualified&nbsp;key&nbsp;name.<br>
+&nbsp;<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_raw_attribute"><strong>get_raw_attribute</strong></a>(self, key)</dt><dd><tt>Get&nbsp;the&nbsp;raw&nbsp;underlying&nbsp;attribute.<br>
+&nbsp;<br>
+:param&nbsp;key:&nbsp;The&nbsp;attribute&nbsp;to&nbsp;get<br>
+:type&nbsp;key:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_relation"><strong>get_relation</strong></a>(self, relation)</dt><dd><tt>Get&nbsp;a&nbsp;specific&nbsp;relation.<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation.<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;mixed</tt></dd></dl>
+
+<dl><dt><a name="User-get_relations"><strong>get_relations</strong></a>(self)</dt><dd><tt>Get&nbsp;all&nbsp;the&nbsp;loaded&nbsp;relations&nbsp;for&nbsp;the&nbsp;instance.<br>
+&nbsp;<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="User-get_table"><strong>get_table</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;table&nbsp;associated&nbsp;with&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;table<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_updated_at_column"><strong>get_updated_at_column</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;"updated&nbsp;at"&nbsp;column.<br>
+&nbsp;<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-get_visible"><strong>get_visible</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;visible&nbsp;attributes&nbsp;for&nbsp;the&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="User-guard"><strong>guard</strong></a>(self, guarded)</dt><dd><tt>Set&nbsp;the&nbsp;guarded&nbsp;attributes.<br>
+&nbsp;<br>
+:param&nbsp;guarded:&nbsp;The&nbsp;guarded&nbsp;attributes<br>
+:type&nbsp;guarded:&nbsp;list<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;current&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-has_get_mutator"><strong>has_get_mutator</strong></a>(self, key)</dt><dd><tt>Determine&nbsp;if&nbsp;a&nbsp;get&nbsp;mutator&nbsp;exists&nbsp;for&nbsp;an&nbsp;attribute.<br>
+&nbsp;<br>
+:param&nbsp;key:&nbsp;The&nbsp;attribute&nbsp;name<br>
+:type&nbsp;key:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="User-has_many"><strong>has_many</strong></a>(self, related, foreign_key=None, local_key=None, relation=None, _wrapped=True)</dt><dd><tt>Define&nbsp;a&nbsp;one&nbsp;to&nbsp;many&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;foreign_key:&nbsp;The&nbsp;foreign&nbsp;key<br>
+:type&nbsp;foreign_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;local_key:&nbsp;The&nbsp;local&nbsp;key<br>
+:type&nbsp;local_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation&nbsp;(defaults&nbsp;to&nbsp;method&nbsp;name)<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;HasOne</tt></dd></dl>
+
+<dl><dt><a name="User-has_many_through"><strong>has_many_through</strong></a>(self, related, through, first_key=None, second_key=None, relation=None, _wrapped=True)</dt><dd><tt>Define&nbsp;a&nbsp;has-many-through&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;through:&nbsp;The&nbsp;through&nbsp;model<br>
+:type&nbsp;through:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;first_key:&nbsp;The&nbsp;first&nbsp;key<br>
+:type&nbsp;first_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;second_key:&nbsp;The&nbsp;second_key<br>
+:type&nbsp;second_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation&nbsp;(defaults&nbsp;to&nbsp;method&nbsp;name)<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;HasManyThrough</tt></dd></dl>
+
+<dl><dt><a name="User-has_one"><strong>has_one</strong></a>(self, related, foreign_key=None, local_key=None, relation=None, _wrapped=True)</dt><dd><tt>Define&nbsp;a&nbsp;one&nbsp;to&nbsp;one&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model:<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;foreign_key:&nbsp;The&nbsp;foreign&nbsp;key<br>
+:type&nbsp;foreign_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;local_key:&nbsp;The&nbsp;local&nbsp;key<br>
+:type&nbsp;local_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation&nbsp;(defaults&nbsp;to&nbsp;method&nbsp;name)<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;HasOne</tt></dd></dl>
+
+<dl><dt><a name="User-is_dirty"><strong>is_dirty</strong></a>(self, *attributes)</dt><dd><tt>Determine&nbsp;if&nbsp;the&nbsp;model&nbsp;or&nbsp;given&nbsp;attributes&nbsp;have&nbsp;been&nbsp;modified.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;attributes&nbsp;to&nbsp;check<br>
+:type&nbsp;attributes:&nbsp;list<br>
+&nbsp;<br>
+:rtype:&nbsp;boolean</tt></dd></dl>
+
+<dl><dt><a name="User-is_fillable"><strong>is_fillable</strong></a>(self, key)</dt><dd><tt>Determine&nbsp;if&nbsp;the&nbsp;given&nbsp;attribute&nbsp;can&nbsp;be&nbsp;mass&nbsp;assigned.<br>
+&nbsp;<br>
+:param&nbsp;key:&nbsp;The&nbsp;attribute&nbsp;to&nbsp;check<br>
+:type&nbsp;key:&nbsp;str<br>
+&nbsp;<br>
+:return:&nbsp;Whether&nbsp;the&nbsp;attribute&nbsp;can&nbsp;be&nbsp;mass&nbsp;assigned&nbsp;or&nbsp;not<br>
+:rtype:&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="User-is_guarded"><strong>is_guarded</strong></a>(self, key)</dt><dd><tt>Determine&nbsp;if&nbsp;the&nbsp;given&nbsp;attribute&nbsp;is&nbsp;guarded.<br>
+&nbsp;<br>
+:param&nbsp;key:&nbsp;The&nbsp;attribute&nbsp;to&nbsp;check<br>
+:type&nbsp;key:&nbsp;str<br>
+&nbsp;<br>
+:return:&nbsp;Whether&nbsp;the&nbsp;attribute&nbsp;is&nbsp;guarded&nbsp;or&nbsp;not<br>
+:rtype:&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="User-joining_table"><strong>joining_table</strong></a>(self, related)</dt><dd><tt>Get&nbsp;the&nbsp;joining&nbsp;table&nbsp;name&nbsp;for&nbsp;a&nbsp;many-to-many&nbsp;relation<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a><br>
+&nbsp;<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-load"><strong>load</strong></a>(self, *relations)</dt><dd><tt>Eager&nbsp;load&nbsp;relations&nbsp;on&nbsp;the&nbsp;model<br>
+&nbsp;<br>
+:param&nbsp;relations:&nbsp;The&nbsp;relations&nbsp;to&nbsp;eager&nbsp;load<br>
+:type&nbsp;relations:&nbsp;str&nbsp;or&nbsp;list<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;current&nbsp;model&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-morph_many"><strong>morph_many</strong></a>(self, related, name, type_column=None, id_column=None, local_key=None, relation=None, _wrapped=True)</dt><dd><tt>Define&nbsp;a&nbsp;polymorphic&nbsp;one&nbsp;to&nbsp;many&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model:<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;type_column:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;type&nbsp;column<br>
+:type&nbsp;type_column:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;id_column:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;id&nbsp;column<br>
+:type&nbsp;id_column:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;local_key:&nbsp;The&nbsp;local&nbsp;key<br>
+:type&nbsp;local_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation&nbsp;(defaults&nbsp;to&nbsp;method&nbsp;name)<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;MorphMany</tt></dd></dl>
+
+<dl><dt><a name="User-morph_one"><strong>morph_one</strong></a>(self, related, name, type_column=None, id_column=None, local_key=None, relation=None, _wrapped=True)</dt><dd><tt>Define&nbsp;a&nbsp;polymorphic&nbsp;one&nbsp;to&nbsp;one&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model:<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;type_column:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;type&nbsp;column<br>
+:type&nbsp;type_column:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;id_column:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;id&nbsp;column<br>
+:type&nbsp;id_column:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;local_key:&nbsp;The&nbsp;local&nbsp;key<br>
+:type&nbsp;local_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation&nbsp;(defaults&nbsp;to&nbsp;method&nbsp;name)<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;HasOne</tt></dd></dl>
+
+<dl><dt><a name="User-morph_to"><strong>morph_to</strong></a>(self, name=None, type_column=None, id_column=None, _wrapped=True)</dt><dd><tt>Define&nbsp;a&nbsp;polymorphic,&nbsp;inverse&nbsp;one-to-one&nbsp;or&nbsp;many&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;name:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation<br>
+:type&nbsp;name:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;type_column:&nbsp;The&nbsp;type&nbsp;column<br>
+:type&nbsp;type_column:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;id_column:&nbsp;The&nbsp;id&nbsp;column<br>
+:type&nbsp;id_column:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;MorphTo</tt></dd></dl>
+
+<dl><dt><a name="User-morph_to_many"><strong>morph_to_many</strong></a>(self, related, name, table=None, foreign_key=None, other_key=None, inverse=False, relation=None, _wrapped=True)</dt><dd><tt>Define&nbsp;a&nbsp;polymorphic&nbsp;many-to-many&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model:<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;name:&nbsp;The&nbsp;relation&nbsp;name<br>
+:type&nbsp;name:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;table:&nbsp;The&nbsp;pivot&nbsp;table<br>
+:type&nbsp;table:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;foreign_key:&nbsp;The&nbsp;foreign&nbsp;key<br>
+:type&nbsp;foreign_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;other_key:&nbsp;The&nbsp;other&nbsp;key<br>
+:type&nbsp;other_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation&nbsp;(defaults&nbsp;to&nbsp;method&nbsp;name)<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;MorphToMany</tt></dd></dl>
+
+<dl><dt><a name="User-morphed_by_many"><strong>morphed_by_many</strong></a>(self, related, name, table=None, foreign_key=None, other_key=None, relation=None, _wrapped=False)</dt><dd><tt>Define&nbsp;a&nbsp;polymorphic&nbsp;many-to-many&nbsp;relationship.<br>
+&nbsp;<br>
+:param&nbsp;related:&nbsp;The&nbsp;related&nbsp;model:<br>
+:type&nbsp;related:&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;or&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;name:&nbsp;The&nbsp;relation&nbsp;name<br>
+:type&nbsp;name:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;table:&nbsp;The&nbsp;pivot&nbsp;table<br>
+:type&nbsp;table:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;foreign_key:&nbsp;The&nbsp;foreign&nbsp;key<br>
+:type&nbsp;foreign_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;other_key:&nbsp;The&nbsp;other&nbsp;key<br>
+:type&nbsp;other_key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation&nbsp;(defaults&nbsp;to&nbsp;method&nbsp;name)<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;MorphToMany</tt></dd></dl>
+
+<dl><dt><a name="User-new_collection"><strong>new_collection</strong></a>(self, models=None)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;Collection&nbsp;instance.<br>
+&nbsp;<br>
+:param&nbsp;models:&nbsp;A&nbsp;list&nbsp;of&nbsp;models<br>
+:type&nbsp;models:&nbsp;list<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;new&nbsp;Collection&nbsp;instance<br>
+:rtype:&nbsp;Collection</tt></dd></dl>
+
+<dl><dt><a name="User-new_from_builder"><strong>new_from_builder</strong></a>(self, attributes=None, connection=None)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;model&nbsp;instance&nbsp;that&nbsp;is&nbsp;existing.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;model&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:param&nbsp;connection:&nbsp;The&nbsp;connection&nbsp;name<br>
+:type&nbsp;connection:&nbsp;str<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;new&nbsp;instance&nbsp;for&nbsp;the&nbsp;current&nbsp;model<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-new_instance"><strong>new_instance</strong></a>(self, attributes=None, exists=False)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;instance&nbsp;for&nbsp;the&nbsp;given&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;instance&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:param&nbsp;exists:<br>
+:type&nbsp;exists:&nbsp;bool<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;new&nbsp;instance&nbsp;for&nbsp;the&nbsp;current&nbsp;model<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-new_orm_builder"><strong>new_orm_builder</strong></a>(self, query)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;orm&nbsp;query&nbsp;builder&nbsp;for&nbsp;the&nbsp;model<br>
+&nbsp;<br>
+:param&nbsp;query:&nbsp;A&nbsp;QueryBuilder&nbsp;instance<br>
+:type&nbsp;query:&nbsp;QueryBuilder<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;Builder&nbsp;instance<br>
+:rtype:&nbsp;Builder</tt></dd></dl>
+
+<dl><dt><a name="User-new_pivot"><strong>new_pivot</strong></a>(self, parent, attributes, table, exists)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;pivot&nbsp;model&nbsp;instance.<br>
+&nbsp;<br>
+:param&nbsp;parent:&nbsp;The&nbsp;parent&nbsp;model<br>
+:type&nbsp;parent:&nbsp;<a href="orator.orm.model.html#Model">Model</a><br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;pivot&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:param&nbsp;table:&nbsp;the&nbsp;pivot&nbsp;table<br>
+:type&nbsp;table:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;exists:&nbsp;Whether&nbsp;the&nbsp;pivot&nbsp;exists&nbsp;or&nbsp;not<br>
+:type&nbsp;exists:&nbsp;bool<br>
+&nbsp;<br>
+:rtype:&nbsp;Pivot</tt></dd></dl>
+
+<dl><dt><a name="User-new_query"><strong>new_query</strong></a>(self)</dt><dd><tt>Get&nbsp;a&nbsp;new&nbsp;query&nbsp;builder&nbsp;for&nbsp;the&nbsp;model's&nbsp;table<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;Builder&nbsp;instance<br>
+:rtype:&nbsp;Builder</tt></dd></dl>
+
+<dl><dt><a name="User-new_query_without_scope"><strong>new_query_without_scope</strong></a>(self, scope)</dt><dd><tt>Get&nbsp;a&nbsp;new&nbsp;query&nbsp;builder&nbsp;for&nbsp;the&nbsp;model's&nbsp;table&nbsp;without&nbsp;a&nbsp;given&nbsp;scope<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;Builder&nbsp;instance<br>
+:rtype:&nbsp;Builder</tt></dd></dl>
+
+<dl><dt><a name="User-new_query_without_scopes"><strong>new_query_without_scopes</strong></a>(self)</dt><dd><tt>Get&nbsp;a&nbsp;new&nbsp;query&nbsp;builder&nbsp;without&nbsp;any&nbsp;scopes.<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;Builder&nbsp;instance<br>
+:rtype:&nbsp;Builder</tt></dd></dl>
+
+<dl><dt><a name="User-push"><strong>push</strong></a>(self)</dt><dd><tt>Save&nbsp;the&nbsp;model&nbsp;and&nbsp;all&nbsp;of&nbsp;its&nbsp;relationship.</tt></dd></dl>
+
+<dl><dt><a name="User-relations_to_dict"><strong>relations_to_dict</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;model's&nbsp;relationships&nbsp;in&nbsp;dictionary&nbsp;form.<br>
+&nbsp;<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="User-replicate"><strong>replicate</strong></a>(self, except_=None)</dt><dd><tt>Clone&nbsp;the&nbsp;model&nbsp;into&nbsp;a&nbsp;new,&nbsp;non-existing&nbsp;instance.<br>
+&nbsp;<br>
+:param&nbsp;except_:&nbsp;The&nbsp;attributes&nbsp;that&nbsp;should&nbsp;not&nbsp;be&nbsp;cloned<br>
+:type&nbsp;except_:&nbsp;list<br>
+&nbsp;<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-save"><strong>save</strong></a>(self, options=None)</dt><dd><tt>Save&nbsp;the&nbsp;model&nbsp;to&nbsp;the&nbsp;database.</tt></dd></dl>
+
+<dl><dt><a name="User-serialize"><strong>serialize</strong></a>(self)</dt><dd><tt>Convert&nbsp;the&nbsp;model&nbsp;instance&nbsp;to&nbsp;a&nbsp;dictionary.<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;dictionary&nbsp;version&nbsp;of&nbsp;the&nbsp;model&nbsp;instance<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="User-set_appends"><strong>set_appends</strong></a>(self, appends)</dt><dd><tt>Sets&nbsp;the&nbsp;appendable&nbsp;attributes.<br>
+&nbsp;<br>
+:param&nbsp;appends:&nbsp;The&nbsp;appendable&nbsp;attributes<br>
+:type&nbsp;appends:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="User-set_attribute"><strong>set_attribute</strong></a>(self, key, value)</dt><dd><tt>Set&nbsp;a&nbsp;given&nbsp;attribute&nbsp;on&nbsp;the&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="User-set_connection"><strong>set_connection</strong></a>(self, name)</dt><dd><tt>Set&nbsp;the&nbsp;connection&nbsp;associated&nbsp;with&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;name:&nbsp;The&nbsp;connection&nbsp;name<br>
+:type&nbsp;name:&nbsp;str<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;current&nbsp;model&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-set_created_at"><strong>set_created_at</strong></a>(self, value)</dt><dd><tt>Set&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;"created&nbsp;at"&nbsp;attribute.<br>
+&nbsp;<br>
+:param&nbsp;value:&nbsp;The&nbsp;value<br>
+:type&nbsp;value:&nbsp;datetime</tt></dd></dl>
+
+<dl><dt><a name="User-set_exists"><strong>set_exists</strong></a>(self, exists)</dt></dl>
+
+<dl><dt><a name="User-set_hidden"><strong>set_hidden</strong></a>(self, hidden)</dt><dd><tt>Set&nbsp;the&nbsp;hidden&nbsp;attributes&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;hidden:&nbsp;The&nbsp;attributes&nbsp;to&nbsp;add<br>
+:type&nbsp;hidden:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="User-set_incrementing"><strong>set_incrementing</strong></a>(self, value)</dt></dl>
+
+<dl><dt><a name="User-set_key_name"><strong>set_key_name</strong></a>(self, name)</dt><dd><tt>Set&nbsp;the&nbsp;primary&nbsp;key&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;name:&nbsp;The&nbsp;primary&nbsp;key&nbsp;name<br>
+:type&nbsp;name:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-set_raw_attribute"><strong>set_raw_attribute</strong></a>(self, key, value, sync=False)</dt><dd><tt>Set&nbsp;an&nbsp;attribute.&nbsp;No&nbsp;checking&nbsp;is&nbsp;done.<br>
+&nbsp;<br>
+:param&nbsp;key:&nbsp;The&nbsp;attribute&nbsp;name<br>
+:type&nbsp;key:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;value:&nbsp;The&nbsp;attribute&nbsp;value<br>
+:type&nbsp;value:&nbsp;mixed<br>
+&nbsp;<br>
+:param&nbsp;sync:&nbsp;Whether&nbsp;to&nbsp;sync&nbsp;the&nbsp;attributes&nbsp;or&nbsp;not<br>
+:type&nbsp;sync:&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="User-set_raw_attributes"><strong>set_raw_attributes</strong></a>(self, attributes, sync=False)</dt><dd><tt>Set&nbsp;the&nbsp;dictionary&nbsp;of&nbsp;model&nbsp;attributes.&nbsp;No&nbsp;checking&nbsp;is&nbsp;done.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;model&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:param&nbsp;sync:&nbsp;Whether&nbsp;to&nbsp;sync&nbsp;the&nbsp;attributes&nbsp;or&nbsp;not<br>
+:type&nbsp;sync:&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="User-set_relation"><strong>set_relation</strong></a>(self, relation, value)</dt><dd><tt>Set&nbsp;the&nbsp;specific&nbsp;relation&nbsp;in&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;relation<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:param&nbsp;value:&nbsp;The&nbsp;relation<br>
+:type&nbsp;value:&nbsp;mixed<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;current&nbsp;<a href="orator.orm.model.html#Model">Model</a>&nbsp;instance<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-set_relations"><strong>set_relations</strong></a>(self, relations)</dt></dl>
+
+<dl><dt><a name="User-set_table"><strong>set_table</strong></a>(self, table)</dt><dd><tt>Set&nbsp;the&nbsp;table&nbsp;associated&nbsp;with&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;table:&nbsp;The&nbsp;table&nbsp;name<br>
+:type&nbsp;table:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-set_updated_at"><strong>set_updated_at</strong></a>(self, value)</dt><dd><tt>Set&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;"updated&nbsp;at"&nbsp;attribute.<br>
+&nbsp;<br>
+:param&nbsp;value:&nbsp;The&nbsp;value<br>
+:type&nbsp;value:&nbsp;datetime</tt></dd></dl>
+
+<dl><dt><a name="User-set_visible"><strong>set_visible</strong></a>(self, visible)</dt><dd><tt>Set&nbsp;the&nbsp;visible&nbsp;attributes&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;visible:&nbsp;The&nbsp;attributes&nbsp;to&nbsp;make&nbsp;visible<br>
+:type&nbsp;visible:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="User-sync_original"><strong>sync_original</strong></a>(self)</dt><dd><tt>Sync&nbsp;the&nbsp;original&nbsp;attributes&nbsp;with&nbsp;the&nbsp;current.<br>
+&nbsp;<br>
+:rtype:&nbsp;Builder</tt></dd></dl>
+
+<dl><dt><a name="User-sync_original_attribute"><strong>sync_original_attribute</strong></a>(self, attribute)</dt><dd><tt>Sync&nbsp;a&nbsp;single&nbsp;original&nbsp;attribute&nbsp;with&nbsp;its&nbsp;current&nbsp;value.<br>
+&nbsp;<br>
+:param&nbsp;attribute:&nbsp;The&nbsp;attribute&nbsp;to&nbsp;sync<br>
+:type&nbsp;attribute:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;<a href="orator.orm.model.html#Model">Model</a></tt></dd></dl>
+
+<dl><dt><a name="User-to_dict"><strong>to_dict</strong></a>(self)</dt><dd><tt>Convert&nbsp;the&nbsp;model&nbsp;instance&nbsp;to&nbsp;a&nbsp;dictionary.<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;dictionary&nbsp;version&nbsp;of&nbsp;the&nbsp;model&nbsp;instance<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="User-to_json"><strong>to_json</strong></a>(self, **options)</dt><dd><tt>Convert&nbsp;the&nbsp;model&nbsp;instance&nbsp;to&nbsp;JSON.<br>
+&nbsp;<br>
+:param&nbsp;options:&nbsp;The&nbsp;JSON&nbsp;options<br>
+:type&nbsp;options:&nbsp;dict<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;JSON&nbsp;encoded&nbsp;model&nbsp;instance<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="User-totally_guarded"><strong>totally_guarded</strong></a>(self)</dt><dd><tt>Determine&nbsp;if&nbsp;the&nbsp;model&nbsp;is&nbsp;totally&nbsp;guarded.<br>
+&nbsp;<br>
+:rtype:&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="User-touch"><strong>touch</strong></a>(self)</dt><dd><tt>Update&nbsp;the&nbsp;model's&nbsp;timestamps.<br>
+&nbsp;<br>
+:rtype:&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="User-touch_owners"><strong>touch_owners</strong></a>(self)</dt><dd><tt>Touch&nbsp;the&nbsp;owning&nbsp;relations&nbsp;of&nbsp;the&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="User-touches"><strong>touches</strong></a>(self, relation)</dt><dd><tt>Determine&nbsp;if&nbsp;a&nbsp;model&nbsp;touches&nbsp;a&nbsp;given&nbsp;relation.<br>
+&nbsp;<br>
+:param&nbsp;relation:&nbsp;The&nbsp;relation&nbsp;to&nbsp;check.<br>
+:type&nbsp;relation:&nbsp;str<br>
+&nbsp;<br>
+:rtype:&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="User-update"><strong>update</strong></a>(self, _attributes=None, **attributes)</dt><dd><tt>Update&nbsp;the&nbsp;model&nbsp;in&nbsp;the&nbsp;database.<br>
+&nbsp;<br>
+:param&nbsp;attributes:&nbsp;The&nbsp;model&nbsp;attributes<br>
+:type&nbsp;attributes:&nbsp;dict<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;number&nbsp;of&nbsp;rows&nbsp;affected<br>
+:rtype:&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="User-uses_timestamps"><strong>uses_timestamps</strong></a>(self)</dt><dd><tt>Determine&nbsp;if&nbsp;the&nbsp;model&nbsp;uses&nbsp;timestamps.<br>
+&nbsp;<br>
+:rtype:&nbsp;bool</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a>:<br>
+<dl><dt><a name="User-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a>:<br>
+<dl><dt><strong>exists</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="orator.orm.model.html#MetaModel">orator.orm.model.MetaModel</a>:<br>
+<dl><dt><strong>CREATED_AT</strong> = 'created_at'</dl>
+
+<dl><dt><strong>UPDATED_AT</strong> = 'updated_at'</dl>
+
+<dl><dt><strong>__appends__</strong> = []</dl>
+
+<dl><dt><strong>__attributes__</strong> = {}</dl>
+
+<dl><dt><strong>__casts__</strong> = {}</dl>
+
+<dl><dt><strong>__class__</strong> = &lt;class 'orator.orm.model.MetaModel'&gt;</dl>
+
+<dl><dt><strong>__columns__</strong> = []</dl>
+
+<dl><dt><strong>__connection__</strong> = None</dl>
+
+<dl><dt><strong>__dates__</strong> = []</dl>
+
+<dl><dt><strong>__dispatcher__</strong> = &lt;orator.events.Event object&gt;</dl>
+
+<dl><dt><strong>__fillable__</strong> = ['id', 'name', 'height', 'created_acc', 'deleted_acc']</dl>
+
+<dl><dt><strong>__guarded__</strong> = ['*']</dl>
+
+<dl><dt><strong>__hidden__</strong> = []</dl>
+
+<dl><dt><strong>__incrementing__</strong> = True</dl>
+
+<dl><dt><strong>__morph_name__</strong> = None</dl>
+
+<dl><dt><strong>__observables__</strong> = []</dl>
+
+<dl><dt><strong>__primary_key__</strong> = 'id'</dl>
+
+<dl><dt><strong>__table__</strong> = 'User'</dl>
+
+<dl><dt><strong>__timestamps__</strong> = False</dl>
+
+<dl><dt><strong>__touches__</strong> = []</dl>
+
+<dl><dt><strong>__unguarded__</strong> = False</dl>
+
+<dl><dt><strong>__visible__</strong> = []</dl>
+
+<dl><dt><strong>many_methods</strong> = ['belongs_to_many', 'morph_to_many', 'morphed_by_many']</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-create_user"><strong>create_user</strong></a>(name, height, created_acc, deleted_acc)</dt><dd><tt>Функция&nbsp;создания&nbsp;нового&nbsp;пользователя&nbsp;с&nbsp;указанной&nbsp;информацией&nbsp;и&nbsp;сохранения&nbsp;его&nbsp;в&nbsp;базе&nbsp;данных.<br>
+&nbsp;<br>
+Аргументы:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;Имя&nbsp;пользователя;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;(float):&nbsp;Рост&nbsp;пользователя;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;created&nbsp;(str):&nbsp;Дата&nbsp;создания&nbsp;записи&nbsp;о&nbsp;пользователе;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deleted&nbsp;(int):&nbsp;Статус&nbsp;удаления&nbsp;записи&nbsp;о&nbsp;пользователе<br>
+&nbsp;<br>
+Возвращает:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#User">User</a>:&nbsp;Объект&nbsp;созданного&nbsp;пользователя</tt></dd></dl>
+ <dl><dt><a name="-delete_user"><strong>delete_user</strong></a>(user_id)</dt><dd><tt>Функция&nbsp;удаления&nbsp;пользователя&nbsp;по&nbsp;его&nbsp;ID&nbsp;из&nbsp;базы&nbsp;данных<br>
+&nbsp;<br>
+Аргументы:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_id&nbsp;(int):&nbsp;ID&nbsp;пользователя<br>
+&nbsp;<br>
+Возвращает:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#User">User</a>:&nbsp;Объект&nbsp;удаленного&nbsp;пользователя</tt></dd></dl>
+ <dl><dt><a name="-get_all_users"><strong>get_all_users</strong></a>()</dt><dd><tt>Функция&nbsp;для&nbsp;получения&nbsp;всех&nbsp;пользователей&nbsp;из&nbsp;базы&nbsp;данных<br>
+&nbsp;<br>
+Возвращает:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;Список&nbsp;объектов&nbsp;пользователей</tt></dd></dl>
+ <dl><dt><a name="-get_user"><strong>get_user</strong></a>(user_id)</dt><dd><tt>Функция&nbsp;получения&nbsp;пользователя&nbsp;по&nbsp;его&nbsp;ID&nbsp;из&nbsp;базы&nbsp;данных<br>
+&nbsp;<br>
+Аргументы:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_id&nbsp;(int):&nbsp;ID&nbsp;пользователя<br>
+&nbsp;<br>
+Возвращает:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#User">User</a>:&nbsp;Объект&nbsp;полученного&nbsp;пользователя</tt></dd></dl>
+ <dl><dt><a name="-get_users_by_name_and_height"><strong>get_users_by_name_and_height</strong></a>(name, height)</dt><dd><tt>Функция&nbsp;для&nbsp;получения&nbsp;пользователей&nbsp;по&nbsp;имени&nbsp;и&nbsp;росту&nbsp;из&nbsp;базы&nbsp;данных<br>
+&nbsp;<br>
+Аргументы:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(str):&nbsp;Имя&nbsp;пользователя;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;(float):&nbsp;Рост&nbsp;пользователя<br>
+&nbsp;<br>
+Возвращает:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;Список&nbsp;объектов&nbsp;пользователей</tt></dd></dl>
+ <dl><dt><a name="-select_all_users"><strong>select_all_users</strong></a>(q='SELECT * FROM user', db_handler=&lt;orator.database_manager.DatabaseManager object at 0x7f9500718220&gt;)</dt><dd><tt>Функция&nbsp;выбора&nbsp;всех&nbsp;пользователей&nbsp;из&nbsp;базы&nbsp;данных&nbsp;и&nbsp;вывода&nbsp;их&nbsp;информации</tt></dd></dl>
+ <dl><dt><a name="-update_user"><strong>update_user</strong></a>(user_id, **kwargs)</dt><dd><tt>Функция&nbsp;обновления&nbsp;пользователя&nbsp;по&nbsp;его&nbsp;ID&nbsp;с&nbsp;указанными&nbsp;атрибутами<br>
+&nbsp;<br>
+Аргументы:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_id&nbsp;(int):&nbsp;ID&nbsp;пользователя;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**kwargs:&nbsp;Переменное&nbsp;количество&nbsp;аргументов&nbsp;для&nbsp;обновления&nbsp;атрибутов&nbsp;пользователя<br>
+&nbsp;<br>
+Возвращает:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#User">User</a>:&nbsp;Обновленный&nbsp;объект&nbsp;пользователя</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>config</strong> = {'default': 'sqlite', 'sqlite': {'database': 'orm.db', 'driver': 'sqlite', 'name': 'sqlite'}}<br>
+<strong>current_datetime</strong> = '2023-12-09 21:39:06'<br>
+<strong>db</strong> = &lt;orator.database_manager.DatabaseManager object&gt;<br>
+<strong>tz</strong> = &lt;DstTzInfo 'Europe/Moscow' LMT+2:30:00 STD&gt;<br>
+<strong>user</strong> = &lt;main.User object&gt;<br>
+<strong>user_data</strong> = {'created_acc': '2022-03-02 14:03:24', 'deleted_acc': 0, 'height': 1.83, 'name': 'Marge'}<br>
+<strong>users</strong> = [{'created_acc': '2022-03-02 14:03:21', 'deleted_acc': 0, 'height': 1.81, 'name': 'Berns'}, {'created_acc': '2022-03-02 14:03:22', 'deleted_acc': 0, 'height': 1.82, 'name': 'Homer'}, {'created_acc': '2022-03-02 14:03:24', 'deleted_acc': 0, 'height': 1.83, 'name': 'Marge'}]</td></tr></table>
+</body></html>
